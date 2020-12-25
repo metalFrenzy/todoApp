@@ -7,7 +7,8 @@ const app = express();
 app.set('view engine','ejs');
 
 // servew static file 
-app.use(express.static('./assets'))
+app.use('/assets',express.static('assets'))
+
 //controllers
 todoController(app);
 
