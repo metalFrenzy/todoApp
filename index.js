@@ -1,5 +1,6 @@
 const express = require('express');
 const todoController = require('./controllers/todocontroller');
+const connections = require('./db/connections');
 
 const app = express();
 
@@ -11,6 +12,9 @@ app.use('/assets',express.static('assets'))
 
 //controllers
 todoController(app);
+
+//database connection
+connections();
 
 // listen to port 
 app.listen(3000);
