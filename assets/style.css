@@ -30,7 +30,7 @@ input[type="text"]{
     color: #989898;
 }
 
-button{
+button,#delete{
     padding: 20px;
     width: 20%;
     float: left;
@@ -41,7 +41,12 @@ button{
     cursor: pointer;
     font-size: 20px;
 }
-
+#delete{
+    float: right;
+    padding: 15px;
+    border-radius: 50%;
+    
+}
 ul{
     list-style-type: none;
     padding: 0;
